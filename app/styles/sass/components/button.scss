@@ -1,0 +1,23 @@
+.button {
+  display: inline-block;
+  font-size: 18px;
+  line-height: 1.11;
+  font-weight: 600;
+  color: $whitecolor;
+  background-color: $accent;
+  padding: 10px 25px;
+  text-align: center;
+  border-radius: 8px;
+  border: 1px solid $accent;
+  transition: $transition;
+
+  @media (max-width: 1024px) {
+    font-size: 14px;
+    padding: 10px 14px;
+  }
+
+  &:hover {
+    background-color: $whitecolor;
+    color: $accent;
+  }
+}

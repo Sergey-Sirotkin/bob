@@ -1,0 +1,145 @@
+// USER VARIABLES SECTION
+
+$accent: #4E7CBF // Accent Color
+$fontsize: 30px // Body Font Size
+$fontweight: 300 // Document Font Weight
+$textcolor: #000 // Text Color
+$whitecolor: #FFFFFF // White Color
+$titlecolor: #122E52 // Title Color
+$sectionbg: #E4EFFF // Section Background
+$lineheight: 1.66 // Document Line Height
+$transition: all 0.3s ease // Document Transition
+$userfont: Comfortaa, sans-serif // User Font Family
+$systemfont: -apple-system, BlinkMacSystemFont, Arial, sans-serif // System Font Family
+
+// Bootstrap compatible gutter variable => $gutter
+$grid-gutter-width: 30px
+$gutter: $grid-gutter-width
+
+// IMPORT SECTION
+
+@import 'node_modules/bootstrap/scss/bootstrap-reboot.scss' // Bootstrap Reboot collection
+@import 'node_modules/bootstrap/scss/mixins/_breakpoints.scss' // Bootstrap Breakpoints mixin
+// @import 'node_modules/bootstrap/scss/bootstrap-grid.scss' // Optional Bootstrap Grid
+// @import 'node_modules/bootstrap/scss/utilities/_sizing.scss' // Optional Bootstrap Utilites
+
+// FONTS LOAD SECTION
+
+@mixin font($fname, $fstyle, $fweight, $furl)
+	@font-face
+		font-family: $fname
+		font-style: $fstyle
+		font-weight: $fweight
+		src: url($furl) format('woff2')
+
+@include font('Comfortaa', normal, 300, '../fonts/Comfortaa-Light.woff2')
+@include font('Comfortaa', normal, 400, '../fonts/Comfortaa-Regular.ttf')
+@include font('Comfortaa', normal, 500, '../fonts/Сomfortaa-Medium.woff2')
+@include font('Comfortaa', normal, 600, '../fonts/Comfortaa-SemiBold.woff2')
+@include font('Comfortaa', normal, 700, '../fonts/Comfortaa-Bold.woff2')
+@include font('Poppins', normal, 400, '../fonts/Poppins-Regular.woff2')
+@include font('Poppins', normal, 600, '../fonts/Poppins-SemiBold.woff2')
+@include font('Aidocr', normal, 400, '../fonts/aidocr.otf')
+@include font('AidocrBold', normal, 400, '../fonts/aidocr-Bold.otf')
+
+// GENERAL DOCUMENT STYLES
+
+::placeholder
+	color: #666
+
+::selection
+	background-color: $accent
+	color: #fff
+
+input, textarea
+	outline: none
+	&:focus:required:invalid
+		border-color: red
+	&:required:valid
+		border-color: green
+
+ul
+	list-style: none
+	margin: 0
+	padding: 0
+
+a
+	transition: $transition
+	&:hover
+		text-decoration: none
+
+img
+	max-width: 100%
+
+p
+	margin: 0
+
+body
+	font-family: $userfont
+	font-size: $fontsize
+	line-height: $lineheight
+	font-weight: $fontweight
+	color: $textcolor
+	min-width: 320px
+	position: relative
+	overflow-x: hidden
+
+	&.hidden__body
+		overflow-y: hidden
+
+.container
+	max-width: 1230px
+	width: 100%
+	margin: 0 auto
+	padding: 0 30px
+
+.title
+	font-family: Comfortaa, sans-serif
+	font-size: 55px
+	font-weight: 700
+	line-height: 1.15
+	margin-bottom: 50px
+	text-align: center
+
+	@media (max-width: 1024px)
+		font-size: 35px
+
+	@media (max-width: 860px)
+		font-size: 30px
+		margin-bottom: 35px
+
+	@media (max-width: 375px)
+		font-size: 26px
+		margin-bottom: 20px
+
+.text
+	font-size: 18px
+
+	@media (max-width: 1024px)
+		font-size: 16px
+
+	@media (max-width: 860px)
+		font-size: 15px
+
+section.section-page
+	padding: 140px 0
+
+	@media (max-width: 1200px)
+		padding: 100px 0
+
+	@media (max-width: 768px)
+		padding: 80px 0
+
+.description
+	font-size: 22px
+	font-weight: 400
+	line-height: 1.67
+	text-align: center
+	margin-bottom: 45px
+
+	@media (max-width: 1024px)
+		font-size: 19px
+
+	@media (max-width: 768px)
+		font-size: 17px
+		margin-bottom: 30px
