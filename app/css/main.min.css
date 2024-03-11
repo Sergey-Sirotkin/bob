@@ -473,6 +473,15 @@ section.section-page {
     margin-bottom: 30px
   }
 }
+.bob-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column
+}
 .button {
   display: inline-block;
   font-size: 18px;
@@ -1483,6 +1492,95 @@ section.section-page {
   .hero__content {
     margin-left: 0
   }
+}
+.bob {
+  font-family: "Roboto Condensed";
+  max-width: 982px
+}
+.bob-intro {
+  background-image: url(../images/dist/intro-bg.svg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-bottom: 70px
+}
+.bob-intro__head {
+  position: relative;
+  color: #fff;
+  font-weight: 700;
+  line-height: 1.1;
+  text-transform: uppercase;
+  background-image: url(../images/dist/intro-head-bg.svg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat
+}
+.bob-intro__head-inner {
+  padding: 20px 0 45px 3.5%
+}
+.bob-intro__head-title {
+  position: relative;
+  z-index: 2;
+  font-size: clamp(32px,6.6vw,64px);
+  margin: 0
+}
+.bob-intro__head-description {
+  position: relative;
+  z-index: 2;
+  font-size: clamp(16px,2.5vw,24px);
+  margin-top: 3px;
+  max-width: 61.5%
+}
+.bob-intro__head-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1
+}
+.bob-intro__content {
+  position: relative;
+  padding-bottom: 42.5%
+}
+.bob-intro__content-maskot {
+  width: 28.5%;
+  position: absolute;
+  top: 31%;
+  left: 0
+}
+.bob-intro__content-text {
+  width: 28.5%;
+  color: #fff;
+  text-align: center;
+  font-size: clamp(14px,1.9vw,18px);
+  font-style: normal;
+  font-weight: 700;
+  line-height: 110%;
+  text-transform: uppercase;
+  background-image: url(../images/dist/intro-text-bg.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  position: absolute;
+  top: 20%;
+  left: 20.5%;
+  padding: 4.8% 0
+}
+.bob-intro__content-img {
+  position: absolute;
+  right: 20px;
+  top: -34%;
+  z-index: 2;
+  width: 54.5%
 }
 .pricing {
   background-color: #b0c4de

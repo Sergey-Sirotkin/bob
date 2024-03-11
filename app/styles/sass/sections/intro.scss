@@ -1,0 +1,116 @@
+.bob {
+  font-family: 'Roboto Condensed';
+  max-width: 982px;
+}
+
+
+.bob-intro {
+  background-image: url('../images/dist/intro-bg.svg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-bottom: 70px;
+
+  &__head {
+    position: relative;
+    color: #FFF;
+    font-weight: 700;
+    line-height: 1.1;
+    text-transform: uppercase;
+    background-image: url('../images/dist/intro-head-bg.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    &-inner {
+      padding: 20px 0 45px 3.5%;
+    }
+
+
+    &-title {
+      position: relative;
+      z-index: 2;
+      // font-size: 64px;
+      font-size: clamp(32px, 6.6vw, 64px);
+      margin: 0;
+    }
+
+    &-description {
+      position: relative;
+      z-index: 2;
+      // font-size: 24px;
+      font-size: clamp(16px, 2.5vw, 24px);
+      margin-top: 3px;
+      max-width: 61.5%;
+    }
+
+    &-bg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1;
+    }
+  }
+
+  &__content {
+    position: relative;
+    padding-bottom: 42.5%;
+
+    &-maskot {
+      width: 28.5%;
+      position: absolute;
+      top: 31%;
+      left: 0;
+    }
+
+    &-text {
+      width: 28.5%;
+      color: #fff;
+      text-align: center;
+      // font-size: 18px;
+      // font size is 18px for 982px container, for less it mast be smaller smoothly
+      font-size: clamp(14px, 1.9vw, 18px);
+      font-style: normal;
+      font-weight: 700;
+      line-height: 110%;
+      text-transform: uppercase;
+      background-image: url('../images/dist/intro-text-bg.png');
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      position: absolute;
+      top: 20%;
+      left: 20.5%;
+      padding: 4.8% 0;
+    }
+
+
+    &-img {
+      position: absolute;
+      right: 20px;
+      top: -34%;
+      z-index: 2;
+      width: 54.5%;
+    }
+  }
+}
+
+// .bob-inner {
+//   display: flex;
+//   flex-direction: column;
+
+//   h1,
+//   h2,
+//   h3,
+//   h4,
+//   h5,
+//   h6,
+//   p,
+//   a {
+//     margin: 0;
+//     padding: 0;
+//   }
+// }
