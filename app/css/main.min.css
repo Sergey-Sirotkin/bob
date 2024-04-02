@@ -759,6 +759,50 @@ section.section-page {
     width: 80%
   }
 }
+.bob-benefits {
+  margin-top: 15%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+  grid-template-columns: repeat(4,1fr);
+  gap: 27px;
+  padding: 0 3.5%
+}
+@media (max-width:720px) {
+  .bob-benefits {
+    -ms-grid-columns: (1fr)[2];
+    grid-template-columns: repeat(2,1fr);
+    padding: 0 25px;
+    row-gap: 45px;
+    max-width: 500px;
+    width: 100%;
+    margin: 95px auto 0
+  }
+}
+.bob-benefits__item {
+  text-align: center
+}
+.bob-benefits__item-img {
+  height: 60px
+}
+@media (max-width:390px) {
+  .bob-benefits__item-img {
+    height: 50px
+  }
+}
+.bob-benefits__item-title {
+  color: #ee8b01;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 124%;
+  text-transform: uppercase;
+  margin: 21px 0 0 0
+}
+@media (max-width:390px) {
+  .bob-benefits__item-title {
+    font-size: 16px
+  }
+}
 .book__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;

@@ -1,0 +1,41 @@
+.bob-benefits {
+  margin-top: 15%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 27px;
+  padding: 0 3.5%;
+
+  @media (max-width: 720px) {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0 25px;
+    row-gap: 45px;
+    max-width: 500px;
+    width: 100%;
+    margin: 95px auto 0;
+  }
+
+  &__item {
+    text-align: center;
+
+    &-img {
+      height: 60px;
+
+      @media (max-width: 390px) {
+        height: 50px;
+      }
+    }
+
+    &-title {
+      color: #EE8B01;
+      font-size: 20px;
+      font-weight: 700;
+      line-height: 124%;
+      text-transform: uppercase;
+      margin: 21px 0 0 0;
+
+      @media (max-width: 390px) {
+        font-size: 16px;
+      }
+    }
+  }
+}
