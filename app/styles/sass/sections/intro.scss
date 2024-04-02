@@ -5,11 +5,19 @@
 
 
 .bob-intro {
-  background-image: url('../images/dist/intro-bg.svg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  padding-bottom: 70px;
+  background-color: #FFE9A1;
+  position: relative;
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: -75px;
+    width: 100%;
+    height: 75px;
+    background-image: url('../images/dist/bg-2.png');
+    background-size: contain;
+    background-repeat: repeat-x;
+  }
 
   &__head {
     position: relative;
@@ -22,15 +30,22 @@
     background-position: center;
     background-repeat: no-repeat;
 
+    @media (max-width: 550px) {
+      background-position: left;
+    }
+
     &-inner {
       padding: 20px 0 45px 3.5%;
+
+      @media (max-width: 550px) {
+        padding: 25px 25px 35px 25px;
+      }
     }
 
 
     &-title {
       position: relative;
       z-index: 2;
-      // font-size: 64px;
       font-size: clamp(32px, 6.6vw, 64px);
       margin: 0;
     }
@@ -42,6 +57,11 @@
       font-size: clamp(16px, 2.5vw, 24px);
       margin-top: 3px;
       max-width: 61.5%;
+
+      @media (max-width: 550px) {
+        max-width: 90%;
+        font-size: 15px;
+      }
     }
 
     &-bg {
@@ -54,21 +74,30 @@
 
   &__content {
     position: relative;
-    padding-bottom: 42.5%;
+    display: flex;
+    justify-content: flex-end;
 
     &-maskot {
       width: 28.5%;
       position: absolute;
-      top: 31%;
+      top: 23%;
       left: 0;
+      z-index: 2;
+
+      @media (max-width: 550px) {
+        width: 233px;
+        top: 80px;
+      }
+
+      @media (max-width: 375px) {
+        width: 200px;
+      }
     }
 
     &-text {
       width: 28.5%;
       color: #fff;
       text-align: center;
-      // font-size: 18px;
-      // font size is 18px for 982px container, for less it mast be smaller smoothly
       font-size: clamp(14px, 1.9vw, 18px);
       font-style: normal;
       font-weight: 700;
@@ -82,35 +111,51 @@
       flex-direction: column;
       justify-content: center;
       position: absolute;
-      top: 20%;
+      top: 10%;
       left: 20.5%;
       padding: 4.8% 0;
+
+      @media (max-width: 768px) {
+        width: 33%;
+      }
+
+      @media (max-width: 550px) {
+        width: 210px;
+        height: 125px;
+        padding: 0;
+        left: initial;
+        right: 40px;
+        top: 12px;
+      }
+
+      @media (max-width: 375px) {
+        width: 195px;
+        right: 5px;
+        top: 5px;
+      }
     }
 
 
-    &-img {
-      position: absolute;
-      right: 20px;
-      top: -34%;
-      z-index: 2;
+    &-img-desktop {
       width: 54.5%;
+      margin-top: -21%;
+
+      @media (max-width: 550px) {
+        display: none;
+      }
+    }
+
+    &-img-mobile {
+      display: none;
+
+      @media (max-width: 550px) {
+        display: block;
+        margin-top: 87px;
+      }
+
+      @media (max-width: 375px) {
+        margin-top: 95px;
+      }
     }
   }
 }
-
-// .bob-inner {
-//   display: flex;
-//   flex-direction: column;
-
-//   h1,
-//   h2,
-//   h3,
-//   h4,
-//   h5,
-//   h6,
-//   p,
-//   a {
-//     margin: 0;
-//     padding: 0;
-//   }
-// }
