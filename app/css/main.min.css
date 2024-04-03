@@ -772,9 +772,12 @@ section.section-page {
   .bob-benefits {
     -ms-grid-columns: (1fr)[2];
     grid-template-columns: repeat(2,1fr);
-    padding: 0 25px;
-    row-gap: 45px;
-    max-width: 500px;
+    padding: 0 10px;
+    row-gap: 25px;
+    -webkit-column-gap: 4px;
+    -moz-column-gap: 4px;
+    column-gap: 4px;
+    max-width: 420px;
     width: 100%;
     margin: 95px auto 0
   }
