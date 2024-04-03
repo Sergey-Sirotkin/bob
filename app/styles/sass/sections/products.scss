@@ -1,0 +1,74 @@
+.bob-products {
+  display: flex;
+  gap: 10%;
+  justify-content: space-between;
+  max-width: 850px;
+  margin: 0 auto;
+  padding: 75px 20px 70px 20px;
+
+  @media (max-width: 830px) {
+    flex-direction: column;
+    gap: 70px;
+  }
+
+  &__item {
+    color: #000;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    &-title {
+      text-align: center;
+      font-size: 32px;
+      font-weight: 700;
+      line-height: 110%;
+      text-transform: uppercase;
+
+      @media (max-width: 375px) {
+        font-size: 26px;
+      }
+    }
+
+    &-subtitle {
+      text-align: center;
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 110%;
+      text-transform: uppercase;
+    }
+
+    &-description {
+      font-size: 16px;
+      line-height: 145%;
+      font-weight: 400;
+      margin-bottom: 30px;
+      text-align: justify;
+
+      @media (max-width: 830px) {
+        text-align: justify;
+        max-width: 470px;
+      }
+    }
+
+    &-link {
+      display: block;
+      margin: 0 auto;
+      max-width: 100%;
+      transition: all 0.3s ease-in-out;
+      width: 320px;
+      height: 300px;
+
+
+      &:hover {
+        transform: scale(1.02);
+        opacity: 0.75;
+      }
+
+      @media (max-width: 375px) {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+}
