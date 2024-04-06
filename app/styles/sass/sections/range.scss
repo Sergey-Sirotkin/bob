@@ -1,32 +1,6 @@
 .bob-range {
-  background-color: #C8D400;
   color: #FFF;
-  margin: 105px 0 100px 0;
   position: relative;
-
-  &::after {
-    content: '';
-    position: absolute;
-    top: -100px;
-    width: 100%;
-    height: 515px;
-    background-image: url('../images/dist/range-bg-top.png');
-    background-size: contain;
-    background-repeat: repeat-x;
-    z-index: -1;
-  }
-
-  &::before {
-    content: '';
-    position: absolute;
-    bottom: -100px;
-    width: 100%;
-    height: 287px;
-    background-image: url('../images/dist/range-bg-bottom.png');
-    background-size: contain;
-    background-repeat: repeat-x;
-    z-index: -1;
-  }
 
   &__title {
     text-align: center;
@@ -34,32 +8,57 @@
     font-weight: 700;
     line-height: 110%;
     text-transform: uppercase;
-    margin-bottom: 33px;
+    padding: 0 20px 33px 20px;
+    margin: 0;
+    background-color: #C8D400;
+
+    @media (max-width: 768px) {
+      font-size: 35px;
+    }
   }
 
   &__body {
     display: flex;
     flex-direction: column;
     gap: 25px;
+    background-color: #C8D400;
   }
 
   &__items {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 27px;
     padding: 0 20px;
 
-    @media (max-width: 768px) {
-      flex-wrap: wrap;
+    @media (max-width: 760px) {
+      gap: 23px;
     }
 
-    &-secondary {
-      gap: 32px;
+    @media (max-width: 393px) {
+      column-gap: 4%;
+      row-gap: 10px;
     }
   }
 
   &__item {
     width: 190px;
+
+    &:nth-child(1) {
+      margin-left: 10%;
+    }
+
+    &:nth-child(3) {
+      margin-right: 10%;
+    }
+
+    @media (max-width: 760px) {
+
+      &:nth-child(1),
+      &:nth-child(3) {
+        margin: 0;
+      }
+    }
 
     @media (max-width: 930px) {
       width: 160px;
@@ -67,6 +66,10 @@
 
     @media (max-width: 800px) {
       width: 155px;
+    }
+
+    @media (max-width: 393px) {
+      width: 45%;
     }
 
     &-link {

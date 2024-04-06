@@ -2219,32 +2219,8 @@ section.section-page {
   }
 }
 .bob-range {
-  background-color: #c8d400;
   color: #fff;
-  margin: 105px 0 100px 0;
   position: relative
-}
-.bob-range::after {
-  content: "";
-  position: absolute;
-  top: -100px;
-  width: 100%;
-  height: 515px;
-  background-image: url(../images/dist/range-bg-top.png);
-  background-size: contain;
-  background-repeat: repeat-x;
-  z-index: -1
-}
-.bob-range::before {
-  content: "";
-  position: absolute;
-  bottom: -100px;
-  width: 100%;
-  height: 287px;
-  background-image: url(../images/dist/range-bg-bottom.png);
-  background-size: contain;
-  background-repeat: repeat-x;
-  z-index: -1
 }
 .bob-range__title {
   text-align: center;
@@ -2252,7 +2228,14 @@ section.section-page {
   font-weight: 700;
   line-height: 110%;
   text-transform: uppercase;
-  margin-bottom: 33px
+  padding: 0 20px 33px 20px;
+  margin: 0;
+  background-color: #c8d400
+}
+@media (max-width:768px) {
+  .bob-range__title {
+    font-size: 35px
+  }
 }
 .bob-range__body {
   display: -webkit-box;
@@ -2262,29 +2245,48 @@ section.section-page {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  gap: 25px
+  gap: 25px;
+  background-color: #c8d400
 }
 .bob-range__items {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
   gap: 27px;
   padding: 0 20px
 }
-@media (max-width:768px) {
+@media (max-width:760px) {
   .bob-range__items {
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap
+    gap: 23px
   }
 }
-.bob-range__items-secondary {
-  gap: 32px
+@media (max-width:393px) {
+  .bob-range__items {
+    -webkit-column-gap: 4%;
+    -moz-column-gap: 4%;
+    column-gap: 4%;
+    row-gap: 10px
+  }
 }
 .bob-range__item {
   width: 190px
+}
+.bob-range__item:nth-child(1) {
+  margin-left: 10%
+}
+.bob-range__item:nth-child(3) {
+  margin-right: 10%
+}
+@media (max-width:760px) {
+  .bob-range__item:nth-child(1),
+  .bob-range__item:nth-child(3) {
+    margin: 0
+  }
 }
 @media (max-width:930px) {
   .bob-range__item {
@@ -2294,6 +2296,11 @@ section.section-page {
 @media (max-width:800px) {
   .bob-range__item {
     width: 155px
+  }
+}
+@media (max-width:393px) {
+  .bob-range__item {
+    width: 45%
   }
 }
 .bob-range__item-link {
