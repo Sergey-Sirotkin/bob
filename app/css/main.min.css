@@ -460,10 +460,10 @@
 @media (max-width:550px) {
   .bob-intro__content-maskot {
     width: 233px;
-    top: 80px
+    top: 95px
   }
 }
-@media (max-width:375px) {
+@media (max-width:392px) {
   .bob-intro__content-maskot {
     width: 200px
   }
@@ -498,7 +498,7 @@
 }
 @media (max-width:768px) {
   .bob-intro__content-text {
-    width: 33%
+    width: 32%
   }
 }
 @media (max-width:550px) {
@@ -511,7 +511,7 @@
     top: 12px
   }
 }
-@media (max-width:375px) {
+@media (max-width:392px) {
   .bob-intro__content-text {
     width: 195px;
     right: 5px;
@@ -533,12 +533,7 @@
 @media (max-width:550px) {
   .bob-intro__content-img-mobile {
     display: block;
-    margin-top: 87px
-  }
-}
-@media (max-width:375px) {
-  .bob-intro__content-img-mobile {
-    margin-top: 95px
+    margin-top: 105px
   }
 }
 .bob-products {
