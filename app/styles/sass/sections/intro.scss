@@ -3,6 +3,10 @@
   max-width: 982px;
 }
 
+.bob-inner {
+  display: flex;
+  flex-direction: column;
+}
 
 .bob-intro {
   background-color: #FFE9A1;
