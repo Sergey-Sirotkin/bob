@@ -1,6 +1,10 @@
 .bob {
   font-family: 'Roboto Condensed';
   max-width: 982px;
+
+  img {
+    max-width: 100%;
+  }
 }
 
 .bob-inner {
@@ -9,7 +13,7 @@
 }
 
 .bob-intro {
-  background-color: #FFE9A1;
+  background-color: $introBg;
   position: relative;
 
   &::after {
