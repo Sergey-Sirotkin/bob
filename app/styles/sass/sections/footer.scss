@@ -3,7 +3,7 @@
   justify-content: space-between;
   gap: 40px;
   position: relative;
-  background-image: url('../images/dist/footer-bg.png');
+  background-image: url('../images/footer-bg.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -14,7 +14,7 @@
   }
 
   @media (max-width: 500px) {
-    background-image: url('../images/dist/footer-bg-mobile.png');
+    background-image: url('../images/footer-bg-mobile.png');
     background-position: top;
     padding-top: 4%;
   }
@@ -70,7 +70,7 @@
     font-weight: 700;
     line-height: 100%;
     text-transform: uppercase;
-    background-image: url('../images/dist/footer-text-bg.png');
+    background-image: url('../images/footer-text-bg.png');
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
