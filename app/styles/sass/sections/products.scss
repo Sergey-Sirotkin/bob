@@ -24,6 +24,7 @@
       font-weight: 700;
       line-height: 110%;
       text-transform: uppercase;
+      margin: 5px 0 15px 0;
 
       @media (max-width: 375px) {
         font-size: 26px;
@@ -36,6 +37,7 @@
       font-weight: 700;
       line-height: 110%;
       text-transform: uppercase;
+      margin: 0;
     }
 
     &-description {
@@ -44,6 +46,7 @@
       font-weight: 400;
       margin-bottom: 30px;
       text-align: justify;
+      margin: 15px 0 30px 0;
 
       @media (max-width: 830px) {
         text-align: justify;
