@@ -1,0 +1,20 @@
+.bob {
+  font-family: "Roboto Condensed";
+  max-width: 982px
+}
+.bob img {
+  max-width: 100%
+}
+.bob h1,
+.bob h2,
+.bob h3,
+.bob h4,
+.bob h5,
+.bob h6,
+.bob p {
+  font-weight: inherit;
+  font-size: inherit;
+  margin: 0;
+  padding: 0;
+  line-height: inherit
+}
