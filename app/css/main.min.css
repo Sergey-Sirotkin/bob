@@ -390,7 +390,7 @@
 .bob-intro::after {
   content: "";
   position: absolute;
-  bottom: -75px;
+  bottom: -72px;
   width: 100%;
   height: 75px;
   background-image: url(../images/bg-2.png);
@@ -425,7 +425,8 @@
   position: relative;
   z-index: 2;
   font-size: 64px;
-  margin: 0
+  margin: 0;
+  font-weight: 700
 }
 @media (max-width:850px) {
   .bob-intro__head-title {
@@ -670,6 +671,12 @@
   color: #fff;
   position: relative
 }
+.bob-range__bg-top {
+  margin-bottom: -3px
+}
+.bob-range__bg-bottom {
+  margin-top: -3px
+}
 .bob-range__title {
   text-align: center;
   font-size: 59px;
@@ -694,7 +701,8 @@
   -ms-flex-direction: column;
   flex-direction: column;
   gap: 25px;
-  background-color: #c8d400
+  background-color: #c8d400;
+  position: relative
 }
 .bob-range__items {
   display: -webkit-box;

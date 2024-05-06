@@ -2,6 +2,14 @@
   color: #FFF;
   position: relative;
 
+  &__bg-top {
+    margin-bottom: -3px;
+  }
+
+  &__bg-bottom {
+    margin-top: -3px;
+  }
+
   &__title {
     text-align: center;
     font-size: 59px;
@@ -22,6 +30,7 @@
     flex-direction: column;
     gap: 25px;
     background-color: #C8D400;
+    position: relative;
   }
 
   &__items {
